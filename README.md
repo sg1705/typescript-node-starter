@@ -3,10 +3,10 @@
 # Step 1 — Initialize an npm project
 `npm init -y`
 
-# Step 2 - Initialize as TypeScript compiler
+# Step 2 — Initialize as TypeScript compiler
 `tsc --init`
 
-# Step 3 - Configure TypeScript compiler's outDir
+# Step 3 — Configure TypeScript compiler's outDir
 ```
 {
   "compilerOptions": {
@@ -18,7 +18,7 @@
 }
 ```
 
-# Step 4 - Create a build & start script in package.json
+# Step 4 — Create a build & start script in package.json
 
 Let's put together a script to build the source code
 ```
@@ -35,4 +35,8 @@ Let's put together a script to build the source code
 }
 ```
 
+## Reference
+This setup was inspired from a similar [writeup](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript) on Digital Ocean. I have simplified it further and made a few changes.
 
+* Remote the use of TSLint. TSLint is no longer maintained and eslint is the way to go
+* Not all projects need express, so removed that dependency
